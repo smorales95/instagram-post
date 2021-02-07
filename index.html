@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/72524bfa97.js" crossorigin="anonymous"></script>
+         <script src="scripts.js"></script>
 
 </head>
 
@@ -15,7 +16,8 @@
 
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand fab fa-instagram" href="#"> <i style="font-family: billabong;">  Instagram</i></a>
+            <a class="navbar-brand fab fa-instagram" href="#"> <i style="font-family: billabong; font: bold;">
+                    Instagram</i></a>
             <form class="d-flex">
                 <button type="button" class="btn btn-success">Create new Post</button>
                 <div class="dropdown mx-3">
@@ -33,9 +35,23 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin: 5px;">
+        <div class="row oculgrid">
+            <div class="col grids-view" style="text-align: center;">
+                <button type="button" class="btn btn-secondary" onclick="listview(viewwraplistview)">
+                    <i class="fas fa-th-list"></i>
+                </button>
+                <button type="button" class="btn btn-secondary" onclick="gridview(viewwraplistview)">
+                    <i class="fas fa-th-large"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container-fluid" style="display: block;" id="viewwraplistview">
         <div class="row">
-            <div class="col" style="padding: 1px; margin: 2px;"> <img
+            <div class="col" style="padding: 1px; padding-left: 3px; margin: 2px;"> <img
                     src="https://cnnespanol.cnn.com/wp-content/uploads/2020/09/200918140226-football-tease-super-169.jpg?quality=100&strip=info&w=940&h=530&crop=1"
                     style="width: 100%; padding:0px; margin: 0px;" alt=""> </div>
             <div class="col" style="padding: 1px; margin: 2px;"> <img
@@ -46,7 +62,7 @@
                     style="width: 100%; padding:0px; margin:0px;" alt=""> </div>
         </div>
         <div class="row">
-             <div class="col" style="padding: 1px; margin: 2px;"> <img
+            <div class="col" style="padding: 1px; padding-left: 3px; margin: 2px;"> <img
                     src="https://cnnespanol.cnn.com/wp-content/uploads/2020/09/200918140226-football-tease-super-169.jpg?quality=100&strip=info&w=940&h=530&crop=1"
                     style="width: 100%; padding:0px; margin: 0px;" alt=""> </div>
             <div class="col" style="padding: 1px; margin: 2px;"> <img
@@ -57,7 +73,7 @@
                     style="width: 100%; padding:0px; margin:0px;" alt=""> </div>
         </div>
         <div class="row ">
-             <div class="col" style="padding: 1px; margin: 2px;"> <img
+            <div class="col" style="padding: 1px; padding-left: 3px; margin: 2px;"> <img
                     src="https://cnnespanol.cnn.com/wp-content/uploads/2020/09/200918140226-football-tease-super-169.jpg?quality=100&strip=info&w=940&h=530&crop=1"
                     style="width: 100%; padding:0px; margin: 0px;" alt=""> </div>
             <div class="col" style="padding: 1px; margin: 2px;"> <img
@@ -65,8 +81,67 @@
                     style="width: 100%; padding:0px; margin:0px;" alt=""> </div>
             <div class="col" style="padding: 1px; margin: 2px;"> <img
                     src="https://cnnespanol.cnn.com/wp-content/uploads/2020/09/200918140226-football-tease-super-169.jpg?quality=100&strip=info&w=940&h=530&crop=1"
-                    style="width: 100%; padding:0px; margin:0px;" alt=""> </div>
+                    style="width: 100%;" alt=""> </div>
         </div>
+    </div>
+
+    <div style="background-color: lightgray; width: 100%; display: none;" class="view-wrap Grid-view" id="viewwrapgridview">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6" style="padding: 10px; margin: 10px; background-color: white;">
+
+                    <div style="display: inline-block; width: 80%;">
+                        <h2>First Photo</h2>
+                    </div><div style="display: inline-block; text-align: right; width: 20%;">
+                        <span>12/14</span>
+                    </div>
+                    <div>
+                        <img src="https://cnnespanol.cnn.com/wp-content/uploads/2020/09/200918140226-football-tease-super-169.jpg?quality=100&strip=info&w=940&h=530&crop=1"
+                            style="width: 100%; text-align: center;" class="img-responsive" alt="">
+
+                    </div>
+
+                    <div style="padding: 2px;">
+                    <i class="fas fa-heart"></i>
+				    <i class="fas fa-share"></i>    
+                    </div>
+
+                    <div>
+                        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptates excepturi tempora aperiam, provident atque quis repellat voluptatum consequatur!
+                            Quidem minima fuga id quos itaque vitae officiis architecto enim maxime sit!</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-6" style="padding: 10px; margin: 10px; background-color: white;">
+
+                    <div style="display: inline-block; width: 80%;">
+                        <h2>First Photo</h2>
+                    </div>
+                    <div style="display: inline-block; text-align: right; width: 20%;">
+                        <span>12/14</span>
+                    </div><div>
+                        <img src="https://cnnespanol.cnn.com/wp-content/uploads/2020/09/200918140226-football-tease-super-169.jpg?quality=100&strip=info&w=940&h=530&crop=1"
+                            style="width: 100%; text-align: center;" class="img-responsive" alt="">
+
+                    </div>
+
+
+                    <div>
+                        <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptates excepturi tempora aperiam, provident atque quis repellat voluptatum consequatur!
+                            Quidem minima fuga id quos itaque vitae officiis architecto enim maxime sit!</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
     </div>
 
 </body>
