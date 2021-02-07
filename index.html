@@ -35,14 +35,14 @@
         </div>
     </nav>
 
-    <div class="container-fluid" style="margin: 5px;">
+    <div class="container-fluid" style="margin-top:4px; margin-bottom:1px;">
         <div class="row oculgrid">
             <div class="col grids-view" style="text-align: center;">
-                <button type="button" class="btn btn-secondary" onclick="listview(viewwraplistview)">
+                <button type="button" class="btn btn-secondary" onclick="listview()">
                     <i class="fas fa-th-list"></i>
                 </button>
-                <button type="button" class="btn btn-secondary" onclick="gridview(viewwraplistview)">
-                    <i class="fas fa-th-large"></i>
+                <button type="button" class="btn btn-secondary" onclick="gridview()" autofocus>
+                    <i class="fas fa-th"></i>
                 </button>
             </div>
         </div>
@@ -85,7 +85,7 @@
         </div>
     </div>
 
-    <div style="background-color: lightgray; width: 100%; display: none;" class="view-wrap Grid-view" id="viewwrapgridview">
+    <div style="background-color: lightgray; width: 100%; display: none;" id="viewwrapgridview">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-6" style="padding: 10px; margin: 10px; background-color: white;">
